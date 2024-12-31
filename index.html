@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>E-Commerce Website</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Login Section -->
+  <section id="login" class="login-section">
+    <h2>User Login</h2>
+    <form id="loginForm">
+      <input type="text" placeholder="Username" required id="username">
+      <input type="password" placeholder="Password" required id="password">
+      <button type="submit">Login</button>
+      <p id="loginError" class="error-message"></p>
+    </form>
+  </section>
+
+  <!-- Products Section (Initially Hidden) -->
+  <section id="products" class="product-section" style="display:none;">
+    <header>
+      <h1>Our Products</h1>
+      <!-- Category Selector -->
+      <div id="category-selector">
+        <label for="category">Select Category: </label>
+        <select id="category">
+          <option value="all">All Products</option>
+          <option value="electronics">Electronics</option>
+          <option value="home">Home</option>
+          <option value="fashion">Fashion</option>
+        </select>
+      </div>
+    </header>
+
+    <div class="product-list" id="product-list">
+      <!-- Product will be dynamically inserted here -->
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2024 My E-Commerce</p>
+  </footer>
+
+  <!-- Link to JavaScript File -->
+  <script src="script.js"></script>
+</body>
+</html>
